@@ -1,0 +1,24 @@
+.home-bg {
+    background-image: url("../images/Home-Picture.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-overlay {
+    background-image: url("../images/Home-Overlay.jpg");
+    height: 100%;
+    width: 100%;
+}
+
+.home-sec{
+    z-index: 1 !important;
+}
+
+@media screen and (max-width:750px) { 
+    .about-pic{
+        flex-wrap: wrap;
+    }
+    .about-pic img{
+        width: 50%;
+    }
+}

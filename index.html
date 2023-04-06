@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,95 @@
     <!-- favicon link  -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- bootstrap css link  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Vaterinary Business</title>
 </head>
+
 <body>
-    
+    <!-- header start  -->
+    <nav class="navbar navbar-expand-lg bg-info fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-3" href="#">
+                <img src="images/Logo.png" alt="Logo" width="60" height="44">
+            </a>
+            <button class="navbar-toggler text-primary bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav float-end pe-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header end  -->
+
+    <!-- home section start  -->
+    <div id="home" class="d-flex flex-column justify-content-center align-items-center home-bg position-relative">
+        <div class="p-2 home-sec">
+            <h1 class="text-light display-5 text-uppercase fw-bold">We care about your pet</h1>
+        </div>
+        <div class="p-2 home-sec container">
+            <p class="text-light h5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut libero
+                dignissimos eos sapiente rem quos magni veniam atque consequatur corrupti aspernatur nobis consequuntur
+                voluptas veritatis, nesciunt expedita officiis deserunt.</p>
+        </div>
+        <div class="p-3 home-sec"><a class="home-a text-light bg-warning py-2 px-4 rounded-pill text-decoration-none h5"
+                href="#">Order Now</a></div>
+        <div class="home-overlay z-5 position-absolute opacity-25"></div>
+    </div>
+    <!-- home section end  -->
+
+    <!-- about section start  -->
+    <div id="about" class="d-flex flex-column justify-content-center align-items-center bg-primary text-center p-5">
+        <div class="p-2">
+            <h1 class="text-light display-5 text-capitalize fw-bold">Title Here</h1>
+        </div>
+        <div class="p-2 container ">
+            <p class="text-light h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, necessitatibus vero
+                rerum tempora facilis minima?</p>
+        </div>
+        <div class="about-pic container pt-5 d-flex flex-row justify-content-center align-items-center text-light">
+            <div class="p-2">
+                <img class="rounded-circle img-fluid" src="images/About-Picture-1.png" alt="About-Picture-1">
+                <h3 class="pt-2">Pet Care</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, cupiditate.</p>
+            </div>
+            <div class="p-2">
+                <img class="rounded-circle img-fluid" src="images/About-Picture-2.png" alt="About-Picture-2">
+                <h3 class="pt-2">Pet Shop</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, cupiditate.</p>
+            </div>
+            <div class="p-2">
+                <img class="rounded-circle img-fluid" src="images/About-Picture-3.png" alt="About-Picture-3">
+                <h3 class="pt-2">Pet Help</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, cupiditate.</p>
+            </div>
+        </div>
+    </div>
+    <!-- about section end  -->
+
+
+
+    <!-- bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
