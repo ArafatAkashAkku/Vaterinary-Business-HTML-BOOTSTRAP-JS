@@ -30,7 +30,7 @@ rejectBtn.onclick = () => {
     cookieBox.style.visibility = "hidden";
     setTimeout(() => {
         cookieBox.style.visibility = "visible";
-    }, 6000);
+    }, 60000);
 }
 
 acceptBtn.onclick = () => {
