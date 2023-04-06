@@ -18,7 +18,7 @@
     <!-- header start  -->
     <nav class="navbar navbar-expand-lg bg-info fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand ps-3" href="#">
+            <a class="navbar-brand ms-2" href="#">
                 <img src="images/Logo.png" alt="Logo" width="60" height="44">
             </a>
             <button class="navbar-toggler text-primary bg-light" type="button" data-bs-toggle="collapse"
@@ -27,21 +27,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav float-end pe-4">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" aria-current="page" href="#home">Home</a>
+                <ul class="navbar-nav float-end me-4">
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-light fw-bold" aria-current="page" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#about">About</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-light fw-bold" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Product</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-light fw-bold" href="#product">Product</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Promo</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-light fw-bold" href="#promo">Promo</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Contact</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-light fw-bold" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -50,18 +50,18 @@
     <!-- header end  -->
 
     <!-- home section start  -->
-    <div id="home" class="d-flex flex-column justify-content-center align-items-center home-bg position-relative">
-        <div class="p-2 home-sec">
+    <div id="home" class="d-flex flex-column justify-content-center align-items-center home-bg position-relative z-2">
+        <div class="p-2 z-3">
             <h1 class="text-light display-5 text-uppercase fw-bold">We care about your pet</h1>
         </div>
-        <div class="p-2 home-sec container">
+        <div class="p-2 z-3 container">
             <p class="text-light h5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut libero
                 dignissimos eos sapiente rem quos magni veniam atque consequatur corrupti aspernatur nobis consequuntur
                 voluptas veritatis, nesciunt expedita officiis deserunt.</p>
         </div>
-        <div class="p-3 home-sec"><a class="home-a text-light bg-warning py-2 px-4 rounded-pill text-decoration-none h5"
+        <div class="p-3 z-3"><a class="home-a text-light bg-warning py-2 px-4 rounded-pill text-decoration-none h5"
                 href="#">Order Now</a></div>
-        <div class="home-overlay z-5 position-absolute opacity-25"></div>
+        <div class="home-overlay z-1 position-absolute opacity-25"></div>
     </div>
     <!-- home section end  -->
 
@@ -93,6 +93,65 @@
         </div>
     </div>
     <!-- about section end  -->
+
+    <!-- product section start  -->
+    <div id="product"
+        class="product-bg d-flex flex-column justify-content-center align-items-center text-center position-relative z-2">
+        <div class="p-2 z-3">
+            <h1 class="text-light display-5 text-capitalize fw-bold">Title Here</h1>
+        </div>
+        <div class="p-2 container z-3">
+            <p class="text-light h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, necessitatibus vero
+                rerum tempora facilis minima?</p>
+        </div>
+        <div class="container pt-5 promo-px-c d-flex flex-row promo-px-j align-items-center text-light product-sec z-3 flex-wrap">
+            <div class="p-2 mb-2 border border-white border-4 rounded-circle">
+                <div class="py-2 px-4">
+                    <h3 class="pb-2">3.5k</h3>
+                    <p>Post Care</p>
+                </div>
+            </div>
+            <div class="p-2 mb-2 border border-white border-4 rounded-circle">
+                <div class="py-3 promo-px">
+                    <h3 class="pb-2">900</h3>
+                    <p>Outlet</p>
+                </div>
+            </div>
+            <div class="p-2 mb-2 border border-white border-4 rounded-circle">
+                <div class="py-2 px-4">
+                    <h3 class="pb-2">2k+</h3>
+                    <p>Pet Helping</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-overlay position-absolute z-1 opacity-25"></div>
+    </div>
+    <!-- product section end  -->
+
+    <!-- promo section start  -->
+    <div class="bg-primary" id="promo">
+        <div class="container d-flex flex-row justify-content-center align-items-center py-5 promo-wrap">
+            <div class="container">
+                <div class="p-2">
+                    <h1 class="text-light display-5 text-capitalize fw-bold">title Here</h1>
+                </div>
+                <div class="p-2">
+                    <p class="text-light h5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut libero
+                        dignissimos eos sapiente rem quos magni veniam atque consequatur corrupti aspernatur nobis
+                        consequuntur
+                        voluptas veritatis, nesciunt expedita officiis deserunt.</p>
+                </div>
+                <div class="p-3"><a class="home-a text-light bg-warning py-2 px-4 rounded-pill text-decoration-none h5"
+                        href="#">Order Now</a></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <img class="rounded-circle img-fluid" src="images/Promo-Picture.png" alt="Promo-Picture">
+            </div>
+        </div>
+    </div>
+    <!-- promo section end  -->
+
+
 
 
 
