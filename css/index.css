@@ -78,6 +78,17 @@
 
 /* progress bar end  */
 
+/* cookie bar start  */
+
+.cookie{
+    visibility: hidden;
+}
+
+.cookie.hide {
+    display: none;
+}
+/* cookie bar end  */
+
 /* custom scrollbar start */
 
 ::-webkit-scrollbar {

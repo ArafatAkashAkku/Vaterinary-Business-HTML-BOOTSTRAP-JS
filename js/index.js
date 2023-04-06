@@ -16,3 +16,33 @@ window.onscroll = () => {
     let csswidth = Math.floor(100 - progress);
     highlight.style.width = csswidth + "%";
 }
+
+// cookie set 
+const cookieBox = document.querySelector(".cookie");
+const acceptBtn = document.querySelector(".cookie .accept");
+const rejectBtn = document.querySelector(".cookie .reject");
+
+setTimeout(() => {
+    cookieBox.style.visibility = "visible";
+}, 5000);
+
+rejectBtn.onclick = () => {
+    cookieBox.style.visibility = "hidden";
+    setTimeout(() => {
+        cookieBox.style.visibility = "visible";
+    }, 6000);
+}
+
+acceptBtn.onclick = () => {
+    document.cookie = "fname=Arafat; max-age=" + 60 * 60 * 24 * 30;
+    document.cookie = "lname=Akash; max-age=" + 60 * 60 * 24 * 30;
+    if (document.cookie) {
+        cookieBox.classList.add("hide");
+    }
+    else {
+        alert("Cookie can't be set");
+    }
+}
+
+let check = document.cookie.indexOf("fname=Arafat");
+check != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
