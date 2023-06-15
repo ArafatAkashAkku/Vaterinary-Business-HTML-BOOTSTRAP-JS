@@ -29,11 +29,11 @@
         width: 50%;
     }
 
-    .promo-wrap{
+    .promo-wrap {
         flex-wrap: wrap;
     }
 
-    .promo-wrap img{
+    .promo-wrap img {
         width: 50%;
     }
 
@@ -90,13 +90,14 @@
 
 /* cookie bar start  */
 
-.cookie{
+.cookie {
     visibility: hidden;
 }
 
 .cookie.hide {
     display: none;
 }
+
 /* cookie bar end  */
 
 /* custom scrollbar start */
@@ -117,3 +118,33 @@
 }
 
 /* custom scrollbar end */
+
+/* pwa update message start */
+
+#snackbar {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 30px;
+}
+
+#snackbar.show {
+    display: block;
+}
+
+#snackbar p {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+}
+
+#reload {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* pwa update message end */
